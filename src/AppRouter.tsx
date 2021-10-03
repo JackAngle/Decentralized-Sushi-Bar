@@ -5,8 +5,8 @@ import {
     Route,
     Link
   } from 'react-router-dom';
-
-  import MainPage from './views/MainPage/index';
+import AppTrading from './views/App';
+import MainPage from './views/MainPage/index';
  
 
 const AppRouter = () =>{
@@ -28,13 +28,14 @@ const AppRouter = () =>{
   /* Redirect your path here */
   function Home() {
     return <>
-    <h2>Home</h2>
     <MainPage/>
     </>
   }
   
   function App() {
-    return <h2>App</h2>;
+    return <>
+    <AppTrading/>
+    </>
   }
   
   function Whitepaper() {
