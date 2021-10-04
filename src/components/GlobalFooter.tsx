@@ -65,7 +65,7 @@ const openInNewTab = (url: string) => {
            <h2>Still HermitDev <br/> but with a cooler avatar</h2>
         </Col>
 
-        <Col className="d-flex  flex-column justify-content-center">
+        <Col className="d-flex  flex-column justify-content-center p-2">
         <Container className="m-0 p-2">
           <h2>
             <a href="#" onClick={() => openInNewTab("https://twitter.com/ThinhLe156")} ><FontAwesomeIcon  icon={faTwitter} /> Twitter</a>

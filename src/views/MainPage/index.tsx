@@ -4,12 +4,46 @@ import {
   Row, 
   Col,
   Card,
-  Button
+  Button,
+  Carousel
   } from 'react-bootstrap';
 import HomepageImage from '../../components/HomepageImage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faUserShield, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import ReactPlayer from 'react-player';
+
+
+const imageCarousel =<Carousel>
+<Carousel.Item>
+  <img
+    className="d-block img-thumbnail rounded"
+    src="https://images.unsplash.com/photo-1583623025817-d180a2221d0a"
+    alt="First slide"
+    width="600px"
+    height="600px"
+
+  />
+</Carousel.Item>
+<Carousel.Item>
+  <img
+    className="d-block img-thumbnail rounded"
+    src="https://images.unsplash.com/photo-1570780775848-bc1897788ce0"
+    alt="Second slide"
+    width="600px"
+    height="600px"
+
+  />
+</Carousel.Item>
+<Carousel.Item>
+  <img
+    className="d-block img-thumbnail rounded"
+    src="https://images.unsplash.com/photo-1553621042-f6e147245754"
+    alt="Third slide"
+    width="600px"
+    height="600px"
+  />
+</Carousel.Item>
+</Carousel>
 
 
 const welcomeText = <Col md='auto' sm='auto' className="text-light d-flex justify-content-center align-self-center">
@@ -27,7 +61,7 @@ const welcomeText = <Col md='auto' sm='auto' className="text-light d-flex justif
 
 const welcomeLine = <>
 {welcomeText}
-<Col md='auto' sm={8} className="text-center"><HomepageImage /></Col>
+<Col md='auto' sm={8} className="text-center">{imageCarousel}</Col>
 </>    
 
 
