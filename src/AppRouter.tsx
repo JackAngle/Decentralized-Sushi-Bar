@@ -7,18 +7,22 @@ import {
   } from 'react-router-dom';
 import AppTrading from './views/App';
 import MainPage from './views/MainPage/index';
+import GlobalFooter from './components/GlobalFooter';
  
 
 const AppRouter = () =>{
       return <Switch>
       <Route path="/whitepaper">
         <Whitepaper />
+        <GlobalFooter/>
       </Route>
       <Route path="/app">
         <App />
+        <GlobalFooter/>
       </Route>
       <Route path="/">
         <Home />
+        <GlobalFooter/>
       </Route>
     </Switch>
   };

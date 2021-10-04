@@ -41,3 +41,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 12.5%;
+  left: 12.5%;
+}
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import GlobalNavBar from './components/NavBar';
+import GlobalNavBar from './components/GlobalNavBar';
 
 
 function App() {
