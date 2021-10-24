@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import {
   Container, 
   Navbar, 
@@ -21,7 +21,7 @@ import {
 
 
   const mobileNavBar = <Router>
-  <Container fluid className="m-0 p-0">
+  <Container fluid className="m-0 p-8">
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container fluid>
   <Navbar.Brand href="#home" >
@@ -57,7 +57,7 @@ const webNavBar = <Router>
 <Navbar bg="dark" variant="dark">
     <Container fluid>
     {/* LOGO */}
-    <Navbar.Brand href="#home" >
+    <Navbar.Brand href="/" >
       <Image src="whelps.png" width="40" height="40" rounded/>
       <Navbar.Text className="m-2 text-info">
         DeSuBa
@@ -90,7 +90,11 @@ const webNavBar = <Router>
 </Router>
 
 
-  const GlobalNavBar = () =>{
+interface NavBarProps {
+
+}
+
+  const GlobalNavBar: FC<NavBarProps> = () =>{
     // Detect window size change
     const [width, setWidth] = useState<number>(window.innerWidth);
     function handleWindowSizeChange() {

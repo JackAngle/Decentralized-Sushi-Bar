@@ -46,7 +46,7 @@ const imageCarousel =<Carousel>
 </Carousel>
 
 
-const welcomeText = <Col md='auto' sm='auto' className="text-light d-flex justify-content-center align-self-center">
+const welcomeText = <Col md={5} sm={5} className="text-light d-flex justify-content-center align-self-center">
   <Card className="text-light text-left bg-light flex-fill w-100 h-100 d-inline-block card-2 p-2">
   <Card.Body  className="mb">
     <Card.Text className="h1 p-2">Decentralized Sushi Bar</Card.Text>
@@ -61,7 +61,7 @@ const welcomeText = <Col md='auto' sm='auto' className="text-light d-flex justif
 
 const welcomeLine = <>
 {welcomeText}
-<Col md='auto' sm={8} className="text-center">{imageCarousel}</Col>
+<Col md={7} sm={7} className="d-flex justify-content-start">{imageCarousel}</Col>
 </>    
 
 
